@@ -1,0 +1,15 @@
+.February {
+    text-align: center;
+    border-radius: 15px;
+  }
+
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+    margin: 20px;
+  }
+
+.container {
+    margin: 50px
+}
