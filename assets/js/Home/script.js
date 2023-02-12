@@ -3,10 +3,10 @@ $( document ).ready(function() {
 $("#name").css("broder", "red")
 
 let submitButton = $(".submitButton");
-let kittenName = $("#name").val();
-let kittenBreed = $("#breed").val();
-let kittenDOB = $("#dOB").val(); 
-let instagram = $("#instagram").val();
+let kittenName = "";
+let kittenBreed = "";
+let kittenDOB = ""; 
+let instagram = "";
 let kittenData = $(".myKittenData")
 
 let myName = $("<p>").addClass("myName");
@@ -29,15 +29,20 @@ submitButton.on("click", function(event){
 
 
 function saveKittenData(){
-   
+    kittenName = $("#name").val();
+    kittenBreed = $("#breed").val();
+    kittenDOB = $("#dOB").val();
+    console.log("#dOB")
+    instagram = $("#instagram").val();
 
     localStorage.setItem("Name", kittenName)
     localStorage.setItem("Breed", kittenBreed)
     localStorage.setItem("Date of Birth", kittenDOB)
     if (instagram !== null) {
         localStorage.setItem("instargam", instagram);
-        myinsta.removeClass("hide")
         $("a").attr("href", "https://www.instagram.com/" + instagram);
+        $("a").attr("target", "blank");
+        myinsta.removeClass("hide")
         }    
     myName.text("Name: " + localStorage.getItem("Name"));
     myBreed.text("Breed: " + localStorage.getItem("Breed"));
