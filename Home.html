@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten Diary - Home</title>
+    <link rel="stylesheet" href="assets/css/Home/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-shield-cat"></i>
+        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#diary">Diary</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Welcome to Kitten Diary</h1>
+            <p class="lead">Random Cat Fact here</p>
+          </div>
+        </div>
+        
+        <section class="newKittenProfile">
+            <div class="container table-bordered">
+               <div class="row d-flex justify-content-around mt-8">  
+                    <h2 class="my-4">My Kitten's Profile</h2>
+                </div>
+              <div class="row align-items-center">
+                <div class="col-lg-4 order-lg-2">
+                  <img class="img-fluid rounded-circle" src="assets/images/Profile.jpg"/>     
+                </div>
+                
+                <div class="col-lg-7 order-lg-1">
+                  <div class="p-5">
+                    <form>
+                      <p>Name: <input id="name" type="text" name="fname" required> </p>
+                      <p>Breed: <input id="breed" type="text" name="fname" required> </p>
+                      <p>Date of Birth: <input id="doB" type="text" name="fname" required> </p>
+                      <p>Instagram: <input id="instagram" type="text" name="fname"> </p>
+                      <button class="btn btn-light submitButton">Submit</button>
+                    </form>    
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="myKittenProfile hide">
+            <div class="container table-bordered">
+               <div class="row d-flex justify-content-around mt-8">  
+                    <h2 class="my-4">My Kitten's Profile</h2>
+                </div>
+              <div class="row align-items-center">
+                <div class="col-lg-4 order-lg-2">
+                  <img class="img-fluid rounded-circle" src="assets/images/Profile.jpg"/>     
+                </div>
+                <div class="col-lg-7 order-lg-1 ">
+                  <div class="p-5 myKittenData"></div>
+                  <a class="btn btn-light myInsta hide">
+                    <i class="fa-solid fa-paw"></i>Follow my instagram
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        <section class="myDairy container hide">
+          <div class="row d-flex justify-content-around mt-8">      
+            <h2 class="my-4" id="diary">My Kitten's Diary</h2>
+          </div>
+          
+          <dvi class="row justify-content-between text-center mt-8">
+            
+            <div class="col-lg-5 mx-auto mb-4">
+              <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/297/299"/>
+                <div class="card-body">
+                  <h3>January</h3>
+                  <p class="card-text">
+                    Random Cat Fact: Cats are believed to be the only mammals who don’t taste sweetness.
+                  </p>
+                </div>
+                <div class="card-footer">
+                <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-5 mx-auto mb-4">
+              <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/302/299"/>
+                <div class="card-body">
+                  <h3>February</h3>
+                  <p class="card-text">
+                    Random Cat Fact: Cats are nearsighted, but their peripheral vision and night vision are much better than that of humans.
+                  </p>
+                </div>
+                <div class="card-footer">
+                <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-5 mx-auto mb-4">
+              <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/300/301"/>
+                <div class="card-body">
+                  <h3>March</h3>
+                  <p class="card-text">
+                    Random Cat Fact: Cats are supposed to have 18 toes (five toes on each front paw; four toes on each back paw). 
+                  </p>
+                </div>
+                <div class="card-footer">
+                <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-5 mx-auto mb-4">
+              <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/301/299"/>
+                <div class="card-body">
+                  <h3>April</h3>
+                  <p class="card-text">
+                    Random Cat Fact: Cats can jump up to six times their length.
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-lg-5 mx-auto mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://placekitten.com/298/299"/>
+                  <div class="card-body">
+                    <h3>May</h3>
+                    <p class="card-text">
+                        Random Cat Fact: Cats’ claws all curve downward, which means that they can’t climb down trees head-first. Instead, they have to back down the trunk.  
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-lg-5 mx-auto mb-4">
+              <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/298/299"/>
+                <div class="card-body">
+                  <h3>June</h3>
+                  <p class="card-text">
+                    Random Cat Fact: Cats’ collarbones don’t connect to their other bones, as these bones are buried in their shoulder muscles.
+                  </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                        </div>
+                      </div>
+                    </div>
+
+            <div class="col-lg-5 mx-auto mb-4">
+                <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/301/302"/>
+                 <div class="card-body">
+                    <h3>July</h3>
+                    <p class="card-text">
+                      Random Cat Fact: Cats have 230 bones, while humans only have 206.
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                        </div>
+                      </div>
+                    </div>
+
+        <div class="col-lg-5 mx-auto mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://placekitten.com/302/301"/>
+                <div class="card-body">
+                    <h3>August</h3>
+                    <p class="card-text">
+                    Random Cat Fact: Cats have an extra organ that allows them to taste scents on the air, which is why your cat stares at you with her mouth open from time to time.
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                        </div>
+                      </div>
+                    </div>
+
+        <div class="col-lg-5 mx-auto mb-4">
+            <div class="card">
+            <img class="card-img-top" src="https://placekitten.com/298/297"/>
+                <div class="card-body">
+                    <h3>September</h3>
+                    <p class="card-text">
+                    Random Cat Fact: Cats have whiskers on the backs of their front legs, as well.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                    </div>
+                  </div>
+                </div>
+
+        <div class="col-lg-5 mx-auto mb-4">
+            <div class="card">
+             <img class="card-img-top" src="https://placekitten.com/300/298"/>
+            <div class="card-body">
+                <h3>October</h3>
+                <p class="card-text">
+                 Random Cat Fact: Cats have nearly twice the amount of neurons in their cerebral cortex as dogs. 
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                </div>
+              </div>
+            </div>
+
+        <div class="col-lg-5 mx-auto mb-4">
+            <div class="card">
+            <img class="card-img-top" src="https://placekitten.com/298/300"/>
+                <div class="card-body">
+                    <h3>November</h3>
+                    <p class="card-text">
+                      Random Cat Fact:  Cats have the largest eyes relative to their head size of any mammal.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                    </div>
+                  </div>
+                </div>
+
+        <div class="col-lg-5 mx-auto mb-4">
+            <div class="card">
+             <img class="card-img-top" src="https://placekitten.com/303/302"/>
+            <div class="card-body">
+                <h3>December</h3>
+                <p class="card-text">
+                 Random Cat Fact: Cats’ rough tongues can lick a bone clean of any shred of meat.
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="Diary.html" class="btn btn-primary">Find out more!</a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/Home/script.js"></script>    
+</body>
+</html>
