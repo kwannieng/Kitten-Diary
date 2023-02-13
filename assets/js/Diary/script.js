@@ -31,7 +31,9 @@ $(document).ready(function() {
       $('#textbox26'), 
       $('#textbox27'),
       $('#textbox28'),
-    
+      $('#textbox29'),
+      $('#textbox30'),
+      $('#textbox31'),
     ];
     
     let scheduleDate = [
@@ -68,7 +70,7 @@ $(document).ready(function() {
     
     displayDate()
     function displayDate() {
-        let rightNow = moment().format('dddd, MMMM Do YYYY');
+        let rightNow = moment().format('MMMM YYYY');
         todayDate.text(rightNow);
     }
     
@@ -130,11 +132,10 @@ $(document).ready(function() {
     $("#textbox5").val(localStorage.getItem("25"))
     $("#textbox6").val(localStorage.getItem("26"))
     $("#textbox7").val(localStorage.getItem("27"))
-    $("#textbox8").val(localStorage.getItem("28"))
-
-    
-    
-    
+    $("#textbox8").val(localStorage.getItem("28"))    
+    $("#textbox8").val(localStorage.getItem("29"))
+    $("#textbox8").val(localStorage.getItem("30"))
+    $("#textbox8").val(localStorage.getItem("31"))
     
     
     })
