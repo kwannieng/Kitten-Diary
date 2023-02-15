@@ -26,8 +26,18 @@ h1 {
   z-index: 10; 
 }
 
-.newKittenProfile{
-    margin: 20px;
+.newKittenProfile, .myKittenProfile{
+    margin: -100;
+    min-height: 1680px;
+    background-image: url(../bg-images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+}
+
+.profile{
+  padding-top: 500px;
+  border: none;
 }
 
 h2, h3, a, p{
@@ -39,10 +49,13 @@ font-size: 35px;
 }
 
 .hide{
-display: none
+display: none;
 }
 
 .row{
 margin-bottom: 30px;
 }
 
+.myDiary{
+  background-image: url(../bg-images/kitten-bg2.gif);
+}
