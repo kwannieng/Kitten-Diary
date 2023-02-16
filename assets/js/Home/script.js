@@ -34,8 +34,8 @@ if (localStorage.getItem("Breed") !== null){
 }
 
 if (instagram !== null) {
-    $("a").attr("href", "https://www.instagram.com/" + instagram);
-    $("a").attr("target", "blank");
+    myinsta.attr("href", "https://www.instagram.com/" + instagram);
+    myinsta.attr("target", "blank");
     myinsta.removeClass("hide")
 } 
 
@@ -67,21 +67,18 @@ myKittenProfile.removeClass("hide");
 }
 
 
-
-
 let catFactLine = $("#scroll-text");
-let randomNumber = Math.floor(Math.random()*(365)+1);
-console.log(randomNumber)
-let randomFact
-let catFat_URL = "https://catfact.ninja/facts?max_length=100&limit=365"
+let randomFact = "";
+let catFat_URL = "https://catfact.ninja/facts?max_length=150&limit=100"
 
 $.ajax({
     url: catFat_URL,
     methoud: 'GET'
     }).then(function(response){ 
-        // randomFact = response.data[randomNumber].fact
-        // console.log(randomFact)
-        catFactLine.text("Daily Random Cat Fact: ")
+        let rN = Math.floor(Math.random()*13)+1
+        randomFact = response.data[rN].fact
+        console.log(randomFact)
+        catFactLine.text("Daily Random Cat Fact: " + randomFact)
         $(".catFact").append(catFactLine)
     })
 

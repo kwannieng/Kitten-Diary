@@ -12,6 +12,7 @@ body {
     z-index: -10;
     position: relative;
     margin-top: -10%;
+    margin-bottom: 150px;
   }
 
 h1 {
@@ -27,12 +28,14 @@ h1 {
 }
 
 .profile-section{
-  padding: 150px;
+  padding: 200px;
   background-image: url(../bg-images/bg1.jpg);
   border: none;
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 200px;
+  margin-bottom: 400px;
 }
 
 h2, h3, a, p{
@@ -57,16 +60,24 @@ form, .myKittenData{
 
 .myKittenData{
   font-size: 25px;
-  
+
 }
 
 .row{
 margin-bottom: 30px;
 }
 
+#scroll-text{
+  font-size: 30px;
+}
+
 .myDiary{
   background-image: url(../bg-images/kitten-bg2.gif);
-  margin-top: 50px;
+  background-size: 25%;
+}
+
+#diary{
+  margin-top: -100px;
 }
 
 #scroll-container {
@@ -75,6 +86,7 @@ margin-bottom: 30px;
   border-top: dotted 5px grey;
   border-bottom: dotted 5px grey ;
   overflow: hidden;
+  font-weight: 500;
 }
 
 #scroll-text {
@@ -87,6 +99,7 @@ margin-bottom: 30px;
   -webkit-animation: my-animation 50s linear infinite;
   animation: my-animation 50s linear infinite;
 }
+
 
 /* for Firefox */
 @-moz-keyframes my-animation {
@@ -111,4 +124,8 @@ margin-bottom: 30px;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+}
+
+#diary{
+  margin-bottom: 100px ;
 }
