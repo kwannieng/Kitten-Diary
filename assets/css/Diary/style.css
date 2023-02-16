@@ -2,9 +2,12 @@ body {
   font-family: 'Bradley Hand ITC';
   font-size: 20px;
   line-height: 1.5;
+  }
+
+#monthlyCalendar{
   background-image: url("../bg-images/kitten-bg.gif");
   background-size: 400px;
-  }
+}
 
 h1, h2, h3 {
   font-family: 'Bradley Hand ITC';
@@ -39,6 +42,7 @@ h1, h2, h3 {
   min-height: 640px;
   z-index: -10;
   position: relative;
+  margin-bottom: 200px;
   }
   
 
@@ -105,7 +109,15 @@ textarea {
   }
 
 #currentDay {
-  text-align: end;
+  text-align: center;
+  margin: 50px 30% 50px 30% ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  background-image: url("../bg-images/label2.gif") ;
+  background-size: 260% 230%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hide{

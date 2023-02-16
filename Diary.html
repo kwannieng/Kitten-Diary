@@ -29,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="Profile.html">Profile<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="Home.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#diary">Diary</a>
+                  <a class="nav-link" href="Home.html#profile">Profile</a>
                 </li>
               </ul>
             </div>
@@ -42,8 +42,6 @@
     <header>
       <img src="assets/images/kitten6.jpg" class="hero-img"/>
       <div class="heading">
-        <!-- <h1 class="display-3">My Kitten Diary</h1>
-        <p>A calendar to record how much your kitten grows everyday.</p> -->
         <h2> The First Month (1 - 4 Weeks) </h2>
         <p class="lead-in">Congratulations! Another precious kitten comes to this world, and precisely, to your home! 
           During these 4 weeks, your kitten starts openning their eyes and ears. 
@@ -54,9 +52,10 @@
       </div>
     </header>
     
-    <div class="container">
+  <section id="monthlyCalendar">
+    <div class="container" >
       <h3 id="currentDay"></h3>
-      <div class="row">
+      <div class="row" >
         <div class="col-1 day">
           <p class="date-block" id="1">1</p>
         </div> 
@@ -459,6 +458,7 @@
         </button>
       </div>
     </div>
+  </section>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
