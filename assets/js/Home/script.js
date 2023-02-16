@@ -3,7 +3,7 @@ let submitButton = $(".submitButton");
 let kittenName = "";
 let kittenBreed = "";
 let kittenDOB = ""; 
-let instagram = "";
+
 let kittenData = $(".myKittenData")
 
 //Create new <p> to contain the user input
@@ -21,8 +21,25 @@ kittenData.append(myinsta)
 let myKittenProfile = $(".myKittenProfile")
 let newKittenProfile =$(".newKittenProfile")
 
-//listen to the button click and trigger the save function
+myName.text("Name: " + localStorage.getItem("Name"));
+myBreed.text("Breed: " + localStorage.getItem("Breed"));
+myDOB.text("Date of Birth: " + localStorage.getItem("Date of Birth"))
+let instagram = localStorage.getItem("instagram")
+console.log(instagram)
 
+
+if (localStorage.getItem("Breed") !== null){
+    newKittenProfile.addClass("hide");
+    myKittenProfile.removeClass("hide");
+}
+
+if (instagram !== null) {
+    $("a").attr("href", "https://www.instagram.com/" + instagram);
+    $("a").attr("target", "blank");
+    myinsta.removeClass("hide")
+} 
+
+//listen to the button click and trigger the save function
 submitButton.on("click", function(event){
     event.preventDefault()
     saveKittenData()
@@ -33,26 +50,41 @@ function saveKittenData(){
     kittenName = $("#name").val();
     kittenBreed = $("#breed").val();
     kittenDOB = $("#dOB").val();
-    console.log("#dOB")
     instagram = $("#instagram").val();
 
     localStorage.setItem("Name", kittenName)
     localStorage.setItem("Breed", kittenBreed)
     localStorage.setItem("Date of Birth", kittenDOB)
-    if (instagram !== null) {
-        localStorage.setItem("instargam", instagram);
-        $("a").attr("href", "https://www.instagram.com/" + instagram);
-        $("a").attr("target", "blank");
-        myinsta.removeClass("hide")
-        }    
-    myName.text("Name: " + localStorage.getItem("Name"));
-    myBreed.text("Breed: " + localStorage.getItem("Breed"));
-    myDOB.text("Date of Birth: " + localStorage.getItem("Date of Birth"))
+    localStorage.setItem("instagram", instagram)
+
+myName.text("Name: " + localStorage.getItem("Name"));
+myBreed.text("Breed: " + localStorage.getItem("Breed"));
+myDOB.text("Date of Birth: " + localStorage.getItem("Date of Birth")) 
 
 // unhide the profile with user input and hide the profile for inputting data
-    newKittenProfile.addClass("hide");
-    myKittenProfile.removeClass("hide");
+newKittenProfile.addClass("hide");
+myKittenProfile.removeClass("hide");
 }
+
+
+
+
+let catFactLine = $("#scroll-text");
+let randomNumber = Math.floor(Math.random()*(365)+1);
+console.log(randomNumber)
+let randomFact
+let catFat_URL = "https://catfact.ninja/facts?max_length=100&limit=365"
+
+$.ajax({
+    url: catFat_URL,
+    methoud: 'GET'
+    }).then(function(response){ 
+        // randomFact = response.data[randomNumber].fact
+        // console.log(randomFact)
+        catFactLine.text("Daily Random Cat Fact: ")
+        $(".catFact").append(catFactLine)
+    })
+
 
 
 // let api_key = "live_xZy4oNEjjSaD6NEmxUUTVWB3jQv0eXNOtyjyOPuaBXS1Ot1qSVSKcgIPbF9Jh9yE"

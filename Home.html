@@ -45,52 +45,46 @@
       </div>
     </header>    
  
-        <section class="newKittenProfile">
+    <section>
+      <div id="scroll-container">
+        <div id="scroll-text"><div>
+      </div>
+    </section>
+
+    <section class="profile-section">
+        <div class="newKittenProfile">
+            <div class="container profile">
+              <div class="row d-flex justify-content-around mt-8">  
+                <h1>~ My Kitten's Profile ~</h1>
+              </div> 
+              <div class="row d-flex justify-content-around mt-8">
+                <form>
+                  <p>Name: <input id="name" type="text" name="fname" required> </p>
+                  <p>Breed: <input id="breed" type="text" name="fname" required> </p>
+                  <p>Date of Birth: <input id="dOB" type="text" name="fname" required> </p>
+                  <p>Instagram: <input id="instagram" type="text" name="fname"> </p>
+                  <button class="btn btn-light submitButton">Submit</button>
+                </form>    
+              </div>              
+            </div>
+        </div>
+
+          <div class="myKittenProfile hide">
             <div class="container profile">
                <div class="row d-flex justify-content-around mt-8">  
-                    <h1>My Kitten's Profile</h1>
+                  <h1> ~ My Kitten's Profile ~</h1>
                 </div>
-              <div class="row align-items-center">
-                <div class="col-lg-4 order-lg-2">
-                  <img class="img-fluid rounded-circle" src="assets/images/Profile.jpg"/>     
-                </div>
-                
-                <div class="col-lg-7 order-lg-1">
-                  <div class="p-5">
-                    <form>
-                      <p>Name: <input id="name" type="text" name="fname" required> </p>
-                      <p>Breed: <input id="breed" type="text" name="fname" required> </p>
-                      <p>Date of Birth: <input id="dOB" type="text" name="fname" required> </p>
-                      <p>Instagram: <input id="instagram" type="text" name="fname"> </p>
-                      <button class="btn btn-light submitButton">Submit</button>
-                    </form>    
-                  </div> 
-                </div>
+              <div class="row d-flex justify-content-around mt-8">
+                <div class="myKittenData"></div>
+                <a class="btn btn-light myInsta hide">
+                  <i class="fa-solid fa-paw"></i> Follow my instagram</a>  
               </div>
             </div>
-          </section>
-
-          <section class="myKittenProfile hide">
-            <div class="container profile">
-               <div class="row d-flex justify-content-around mt-8">  
-                    <h1>My Kitten's Profile</h1>
-                </div>
-              <div class="row align-items-center">
-                <div class="col-lg-4 order-lg-2">
-                  <img class="img-fluid rounded-circle" src="assets/images/Profile.jpg"/>     
-                </div>
-                <div class="col-lg-7 order-lg-1 ">
-                  <div class="p-5 myKittenData"></div>
-                  <a class="btn btn-light myInsta hide">
-                    <i class="fa-solid fa-paw"></i> Follow my instagram
-                  </a>  
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
+    </section>
 
 
-        <section class="myDiary">
+    <section class="myDiary">
           <div class="container">
           <div class="row d-flex justify-content-around mt-8">      
             <h1 id="diary">My Kitten's Diary</h1>
@@ -278,7 +272,7 @@
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
