@@ -40,7 +40,6 @@ let notes = {
 let weightInput
 let bodyInput
 let notesInput
-let localStorageData
 
 
 
@@ -95,21 +94,74 @@ localStorage.setItem("Notes", JSON.stringify(notes))
 }
 }
 
+let localWeightArray
+let localWeightData = ""
+let localBodyArray
+let localBodyData = ""
+let localNotesArray
+let localNotesData = ""
+
+renderData()
+
 function renderData (){
+  localWeightArray = JSON.parse(localStorage.getItem("Weight"))
+  localBodyArray = JSON.parse(localStorage.getItem("Body"))
+  localNotesArray = JSON.parse(localStorage.getItem("Notes"))
 
-  for (i = 0; i<n; i++){
+  weightInput = [ 
+    $("#weight-1"), $("#weight-2"), $("#weight-3"), $("#weight-4"), $("#weight-5"),  
+    $("#weight-6"), $("#weight-7"), $("#weight-8"), $("#weight-9"), $("#weight-10"),
+    $("#weight-11"), $("#weight-12"), $("#weight-13"), $("#weight-14"), $("#weight-15"),  
+    $("#weight-16"), $("#weight-17"), $("#weight-18"), $("#weight-19"), $("#weight-20"),
+    $("#weight-21"), $("#weight-22"), $("#weight-23"), $("#weight-24"), $("#weight-25"),  
+    $("#weight-26"), $("#weight-27"), $("#weight-28"), $("#weight-29"), $("#weight-30"),
+    $("#weight-31")
+  ]
+  
+  bodyInput = [ 
+    $("#body-1"), $("body-2"), $("#body-3"), $("#body-4"), $("#body-5"),  
+    $("#body-6"), $("#body-7"), $("#body-8"), $("#body-9"), $("#body-10"),
+    $("#body-11"), $("#body-12"), $("#body-13"), $("#body-14"), $("#body-15"),  
+    $("#body-16"), $("#body-17"), $("#body-18"), $("#body-19"), $("#body-20"),
+    $("#body-21"), $("#body-22"), $("#body-23"), $("#body-24"), $("#body-25"),  
+    $("#body-26"), $("#body-27"), $("#body-28"), $("#body-29"), $("#body-30"),
+    $("#body-31")
+  ]
+  
+  notesInput = [ 
+    $("#textbox1"), $("#textbox2"), $("#textbox3"), $("#textbox4"), $("#textbox5"),  
+    $("#textbox6"), $("#textbox7"), $("#textbox8"), $("#textbox9"), $("#textbox10"),
+    $("#textbox11"), $("#textbox12"), $("#textbox13"), $("#textbox14"), $("#textbox15"),  
+    $("#textbox16"), $("#textbox17"), $("#textbox18"), $("#textbox19"), $("#textbox20"),
+    $("#textbox21"), $("#textbox22"), $("#textbox23"), $("#textbox24"), $("#textbox25"),  
+    $("#textbox26"), $("#textbox27"), $("#textbox28"), $("#textbox29"), $("#textbox30"),
+    $("#textbox31")
+  ]
+
+  for (x = 0; x<n; x++){
     let number = ""
-    number = "d"+[i+1]
-    localStorageData = JSON.parse(localStorage.getItem("Weight"))
-    console.log(localStorageData[number])
+    number = "d"+[x+1]
+    
+    localWeightData = localWeightArray[number]
+    localBodyData = localBodyArray[number]
+    localNotesData = localNotesArray[number]
+  
+    if (localWeightData !== ""){
+       console.log(localWeightData)
+       weightInput[x].val(localWeightData)
+      }
 
-    if (localStorageData[number] !== null){
-     weightInput[i] = localStorageData[number]
-   }
+    if (localBodyData !== ""){
+      console.log(localBodyData)
+      bodyInput[x].val(localBodyData)
+      }
+
+   if (localNotesData !== "Notes: "){
+    console.log(localNotesData)
+    notesInput[x].val(localNotesData)
+    }
   }
 }
-
-
 
 // userWeight= this.$('#weight').text
 
