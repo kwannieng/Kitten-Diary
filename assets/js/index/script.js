@@ -5,6 +5,9 @@ let kittenBreed = "";
 let kittenDOB = ""; 
 
 let kittenData = $(".myKittenData")
+let firstMonth = ""
+
+
 
 //Create new <p> to contain the user input
 
@@ -25,7 +28,7 @@ myName.text("Name: " + localStorage.getItem("Name"));
 myBreed.text("Breed: " + localStorage.getItem("Breed"));
 myDOB.text("Date of Birth: " + localStorage.getItem("Date of Birth"))
 let instagram = localStorage.getItem("instagram")
-console.log(instagram)
+console.log(localStorage.getItem("instagram"))
 
 
 if (localStorage.getItem("Breed") !== null){
@@ -34,7 +37,7 @@ if (localStorage.getItem("Breed") !== null){
 }
 
 if (instagram !== null) {
-    myinsta.attr("href", "https://www.instagram.com/" + instagram);
+    myinsta.attr("href", "https://www.instagram.com/" + localStorage.getItem("instagram"));
     myinsta.attr("target", "blank");
     myinsta.removeClass("hide")
 } 
@@ -64,12 +67,16 @@ myDOB.text("Date of Birth: " + localStorage.getItem("Date of Birth"))
 // unhide the profile with user input and hide the profile for inputting data
 newKittenProfile.addClass("hide");
 myKittenProfile.removeClass("hide");
+
+firstMonth.text = moment(localStorage.getItem("Date of Birth")).format('MMMM YYYY')
 }
+
+
 
 
 let catFactLine = $("#scroll-text");
 let randomFact = "";
-let catFat_URL = "https://catfact.ninja/facts?max_length=150&limit=100"
+let catFat_URL = "https://catfact.ninja/facts?max_length=250&limit=100"
 
 $.ajax({
     url: catFat_URL,
