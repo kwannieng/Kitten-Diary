@@ -141,34 +141,24 @@ function renderData (){
   for (x = 0; x<n; x++){
     let number = ""
     number = "d"+[x+1]
-    
+
     localWeightData = localWeightArray[number]
     localBodyData = localBodyArray[number]
     localNotesData = localNotesArray[number]
   
     if (localWeightData !== ""){
-       console.log(localWeightData)
        weightInput[x].val(localWeightData)
       }
 
-    if (localBodyData !== ""){
-      console.log(localBodyData)
+    if (localBodyData !== ""){    
       bodyInput[x].val(localBodyData)
       }
 
-   if (localNotesData !== "Notes: "){
-    console.log(localNotesData)
-    notesInput[x].val(localNotesData)
-    }
+   if (localNotesData !== "Notes: "){ 
+      notesInput[x].val(localNotesData)
+      }
   }
 }
-
-// userWeight= this.$('#weight').text
-
-// JSON.parse(localStorage.getItem("Weight"))
-// JSON.parse(localStorage.getItem("Body"))
-
-
 
 })
 
