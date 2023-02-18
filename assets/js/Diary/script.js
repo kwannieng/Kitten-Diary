@@ -17,6 +17,7 @@ $(document).ready(function() {
 
     if (thisMonth = "April" || "June" ||"September" ||"November")
     $(".row-31").addClass("hide")
+
   }
 
 

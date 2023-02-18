@@ -34,6 +34,8 @@ console.log(localStorage.getItem("instagram"))
 if (localStorage.getItem("Breed") !== null){
     newKittenProfile.addClass("hide");
     myKittenProfile.removeClass("hide");
+    $(".myDiary").removeClass("hide");
+
 }
 
 if (instagram !== null) {
