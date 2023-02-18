@@ -1,19 +1,21 @@
 $(document).ready(function() {
 
-  let todayDate = $('#currentDay');
-  displayDate()
+  let thisMonth = $('#currentMonth');
+  let firstMonth = ""
+  firstMonth = localStorage.getItem("Date of Birth")
+  console.log(firstMonth)
 
-  function displayDate() {
-    let rightNow = moment().format('MMMM YYYY');
-    todayDate.text(rightNow);
+  displayMonth()
 
-    if (rightNow = "February") {
+  function displayMonth() {
+    thisMonth.text(moment(firstMonth).format("MMMM YYYY"));
+    if (thisMonth = "February") {
       $(".row-29").addClass("hide")
       $(".row-30").addClass("hide")
       $(".row-31").addClass("hide")
     }
 
-    if (rightNow = "April" || "June" ||"September" ||"November")
+    if (thisMonth = "April" || "June" ||"September" ||"November")
     $(".row-31").addClass("hide")
   }
 

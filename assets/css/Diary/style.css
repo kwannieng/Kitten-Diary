@@ -106,7 +106,7 @@ textarea {
     transition: all 0.3s ease-in-out;
   }
 
-#currentDay {
+#currentMonth {
   text-align: center;
   margin: 50px 30% 50px 30% ;
   padding-top: 20px;

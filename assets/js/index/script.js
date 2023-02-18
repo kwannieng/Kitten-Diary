@@ -67,11 +67,9 @@ myDOB.text("Date of Birth: " + localStorage.getItem("Date of Birth"))
 // unhide the profile with user input and hide the profile for inputting data
 newKittenProfile.addClass("hide");
 myKittenProfile.removeClass("hide");
+$(".myDiary").removeClass("hide");
 
-firstMonth.text = moment(localStorage.getItem("Date of Birth")).format('MMMM YYYY')
 }
-
-
 
 
 let catFactLine = $("#scroll-text");
