@@ -71,13 +71,33 @@ margin-bottom: 30px;
   font-size: 30px;
 }
 
+.card{
+  background: transparent !important;
+}
+
+a {
+  color: black !important;
+}
+
+a:link { text-decoration: none !important; }
+a:visited { text-decoration: none; }
+a:hover { 
+  text-decoration: none;
+  border: dotted 1px !important; }
+a:active { text-decoration: none; }
+
+
 .myDiary{
-  background-image: url(../bg-images/kitten-bg2.gif);
-  background-size: 25%;
+  background-image: url(../bg-images/bg3.jpg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 10%;
+  margin-bottom: -10%;
 }
 
 #diary{
-  margin-top: -100px;
+  margin-top:8%;
 }
 
 #scroll-container {
@@ -100,6 +120,10 @@ margin-bottom: 30px;
   animation: my-animation 50s linear infinite;
 }
 
+#diaryGrid{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 /* for Firefox */
 @-moz-keyframes my-animation {
@@ -124,8 +148,4 @@ margin-bottom: 30px;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-}
-
-#diary{
-  margin-bottom: 100px ;
 }
