@@ -77,41 +77,40 @@ a:active { text-decoration: none; }
 .modal{
   height: 50%;
   min-width: 50%;
-  background-image: url(../bg-images/label.gif);
-  
-  background-size: 20%;
+  background-image: url(../bg-images/bg2.jpg);
+  background-size: 120%;
   background-position: center;
+  border: none;
+  background-repeat: no-repeat;
 }
 
 .modal-content {
   font-size: xx-large;
   font-weight: bolder !important;
   border: none;
-
+  background: transparent;
   height: 100%;
+  width: 65%;
+  margin-left:10% ;
 }
 
 .modal-heading{
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 10%;
   margin-bottom: 3%;
-  background-image: url(../bg-images/label2.gif);
-  background-size: 300% 250%;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-top: 10%;
 }
 
 .userInput {
-    color: darkgreen;
     background-color: transparent;
     min-height: 30%;
+    color: darkgreen;
   }
 
 input {
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
     border-bottom: 1px solid black;
     padding: 10px;
     font-size: xx-large;
@@ -120,13 +119,14 @@ input {
     
 textarea {
     resize: none;
-    color: #000000;
+    color: darkgreen;
     background-color: transparent;
     height:70%;
     border: none;
     border-top: dotted 1px ;
     margin-top: 1%;
     padding-top:1%;
+    font-weight: bolder !important;
     }
 
  
@@ -134,15 +134,10 @@ textarea {
     margin: 5%;
     max-width: 15%;
     border-radius: 15px;
-    background-color: white;
-    color: lightblue;
     margin-left: 40%;
     margin-right: 45%;
-  
-  }
-
-.saveBtn i:hover {
-    transition: all 0.3s ease-in-out;
+    border: dotted grey 1px;
+    font-weight: bolder !important;  
   }
 
 #currentMonth {
