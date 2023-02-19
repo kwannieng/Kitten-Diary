@@ -8,16 +8,32 @@ $(document).ready(function() {
   displayMonth()
 
   function displayMonth() {
-    thisMonth.text(moment(firstMonth).add(1, 'months').format("MMMM YYYY"));
-    if (thisMonth = "February") {
-      $(".row-29").addClass("hide")
-      $(".row-30").addClass("hide")
-      $(".row-31").addClass("hide")
+    thisMonth.text(moment(firstMonth).add(1, "months").format("MMMM YYYY"));
+    console.log(moment(firstMonth).add(1, "months").format("MMMM YYYY"))
+    let thisMonthText = moment(firstMonth).add(1, "months").format("MMMM");
+
+    if (thisMonthText === "February") {
+      $(".card-29").addClass("hide")
+      $("card-30").addClass("hide")
+      $(".card-31").addClass("hide")
     }
 
-    if (thisMonth = "April" || "June" ||"September" ||"November")
-    $(".row-31").addClass("hide")
-
+    if (thisMonthText === "April"){
+      $(".card-31").addClass("hide")
+    } 
+    
+    if (thisMonthText === "June"){
+      $(".card-31").addClass("hide")
+    } 
+    
+    if (thisMonthText === "September"){
+      $(".card-31").addClass("hide")
+    }
+    
+    if (thisMonthText === "November"){
+      $(".card-31").addClass("hide")
+    }
+  
   }
 
 

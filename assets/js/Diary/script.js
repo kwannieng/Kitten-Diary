@@ -3,23 +3,39 @@ $(document).ready(function() {
   let thisMonth = $('#currentMonth');
   let firstMonth = ""
   firstMonth = localStorage.getItem("Date of Birth")
-  console.log(firstMonth)
+  // console.log(firstMonth)
 
   displayMonth()
 
   function displayMonth() {
     thisMonth.text(moment(firstMonth).format("MMMM YYYY"));
-    if (thisMonth = "February") {
-      $(".row-29").addClass("hide")
-      $(".row-30").addClass("hide")
-      $(".row-31").addClass("hide")
+    let thisMonthText = moment(firstMonth).format("MMMM");
+  
+    
+    if (thisMonthText === "February") {
+      $(".card-29").addClass("hide")
+      $("card-30").addClass("hide")
+      $(".card-31").addClass("hide")
     }
 
-    if (thisMonth = "April" || "June" ||"September" ||"November")
-    $(".row-31").addClass("hide")
 
+  if (thisMonthText === "April"){
+    $(".card-31").addClass("hide")
+  } 
+  
+  if (thisMonthText === "June"){
+    $(".card-31").addClass("hide")
+  } 
+  
+  if (thisMonthText === "September"){
+    $(".card-31").addClass("hide")
   }
-
+  
+  if (thisMonthText === "November"){
+    $(".card-31").addClass("hide")
+  }
+  
+  }
 
   $(function() {
     $('a[data-modal]').on('click', function() {

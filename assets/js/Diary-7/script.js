@@ -8,16 +8,29 @@ $(document).ready(function() {
   displayMonth()
 
   function displayMonth() {
-    thisMonth.text(moment(firstMonth).format("MMMM YYYY"));
-    if (thisMonth = "February") {
-      $(".row-29").addClass("hide")
-      $(".row-30").addClass("hide")
-      $(".row-31").addClass("hide")
+    thisMonth.text(moment(firstMonth).add(6, 'months').format("MMMM YYYY"));
+    let thisMonthText = moment(firstMonth).add(6, "months").format("MMMM");
+    if (thisMonthText === "February") {
+      $(".card-29").addClass("hide")
+      $("card-30").addClass("hide")
+      $(".card-31").addClass("hide")
     }
 
-    if (thisMonth = "April" || "June" ||"September" ||"November")
-    $(".row-31").addClass("hide")
-
+    if (thisMonthText === "April"){
+      $(".card-31").addClass("hide")
+    } 
+    
+    if (thisMonthText === "June"){
+      $(".card-31").addClass("hide")
+    } 
+    
+    if (thisMonthText === "September"){
+      $(".card-31").addClass("hide")
+    }
+    
+    if (thisMonthText === "November"){
+      $(".card-31").addClass("hide")
+    }
   }
 
 
@@ -108,9 +121,9 @@ function saveData(){
     long[number] = bodyInput[i]
     notes[number] = notesInput[i]
 
-localStorage.setItem("Weight", JSON.stringify(weight))
-localStorage.setItem("Body", JSON.stringify(long))
-localStorage.setItem("Notes", JSON.stringify(notes))
+localStorage.setItem("Weight7", JSON.stringify(weight))
+localStorage.setItem("Body7", JSON.stringify(long))
+localStorage.setItem("Notes7", JSON.stringify(notes))
 }
 }
 
@@ -124,9 +137,9 @@ let localNotesData = ""
 renderData()
 
 function renderData (){
-  localWeightArray = JSON.parse(localStorage.getItem("Weight"))
-  localBodyArray = JSON.parse(localStorage.getItem("Body"))
-  localNotesArray = JSON.parse(localStorage.getItem("Notes"))
+  localWeightArray = JSON.parse(localStorage.getItem("Weight7"))
+  localBodyArray = JSON.parse(localStorage.getItem("Body7"))
+  localNotesArray = JSON.parse(localStorage.getItem("Notes7"))
 
   weightInput = [ 
     $("#weight-1"), $("#weight-2"), $("#weight-3"), $("#weight-4"), $("#weight-5"),  
