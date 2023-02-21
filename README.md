@@ -26,3 +26,8 @@ https://kwannieng.github.io/Kitten-Diary/
 ## Presentation Link
 
 https://drive.google.com/file/d/1e03zorGLP6tHiEFNWTYk0daY8icP3BcO/view?usp=share_link
+
+## Presentation slide
+
+https://drive.google.com/file/d/15DPcDp8XB1uVcxdkUGkfuj2JKS6jyya3/view?usp=sharing
+
