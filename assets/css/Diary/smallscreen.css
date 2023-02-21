@@ -1,13 +1,13 @@
 body {
   font-family: 'Bradley Hand ITC';
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 0.5rem;
+  line-height: 1;
   }
 
 
 h1, h2, h3 {
   font-family: 'Bradley Hand ITC';
-  font-weight: 600  ! important; 
+  font-weight: 500  ! important; 
 }
   
 
@@ -18,17 +18,13 @@ h1, h2, h3 {
 
 .hero-img{
   width: 100%;
-  margin-top: -3em;
-  margin-bottom: 1.5em;
   }
 
-  
-  
 .heading{
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 5em;
-  font-size: 3rem;
+  margin: 0.5em;
+  font-size: 1rem;
   padding-left: 2em;
   padding-right: 2em;
   }
@@ -46,11 +42,18 @@ h1, h2, h3 {
   background-image: url("../bg-images/bg-texture1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 1em 4em 1em 4em;
+  margin-top: 15em;
 }
 
-.calendarGrid{
-  padding: 0.5em 1em 0.5em 1em;
+#currentMonth {
+  text-align: center;
+  margin: 1em ;
+  padding-top: 0.5em;
+  font-size: 2rem;
+  background-image: url("../bg-images/label2.gif") ;
+  background-size: 160% 220%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card{
@@ -60,12 +63,20 @@ h1, h2, h3 {
   background-color: rgba(222,222,222,0.5);
 }
 
+.card-body{
+padding:0;
+}
+
+.card-body>h1{
+  font-size: 1rem;
+  }
+
 .date-block {
   text-align: center;
   color: grey;
+  font-size: 0.1rem !important;
 }
   
-
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -76,24 +87,26 @@ a:active { text-decoration: none; }
   min-height: 75%;
   min-width: 75%;
   background-image: url(../bg-images/bg2.jpg);
-  background-size: 120%;
+  background-size:cover;
   background-position: center;
   border: none;
   background-repeat: no-repeat;
 }
 
 .modal-content {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bolder !important;
   border: none;
   background: transparent;
   height: 100%;
   width: 65%;
-  margin: 6em 8em;
+  margin: 1em 4em;
 }
 
 .modal-heading{
-  margin: 2em 1em 0.5em 0.5em;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin: 1em 1em 0.5em 0.5em;
 }
 
 .userInput {
@@ -108,6 +121,7 @@ input {
     border-bottom: 1px solid black;
     padding: 1em;
     font-size: 1rem;
+
     font-weight: bolder !important;
     }
     
@@ -127,23 +141,11 @@ textarea {
     margin: 0.3rem;
     max-width: 15%;
     border-radius: 1rem;
-    margin-left: 10em;
-    margin-right: 5em;
+    margin: 1em;
     border: dotted grey 1px;
     font-weight: bolder !important;  
   }
 
-#currentMonth {
-  text-align: center;
-  margin: 50px 30% 50px 30% ;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 50px;
-  background-image: url("../bg-images/label2.gif") ;
-  background-size: 260% 230%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .hide{
   display:none

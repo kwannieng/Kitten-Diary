@@ -1,41 +1,41 @@
 body {
-    font-family:'Bradley Hand ITC' !important;
-  }
+  font-family:'Bradley Hand ITC' !important;
+}
 
 .hero-img{
-    width: 100%;
-    padding: 0 ! important;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    z-index: -10;
-    position: relative;
-    margin-top: -10%;
-    margin-bottom: 150px;
-  }
+  width: 100%;
+  padding: 0 ! important;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -10;
+  position: relative;
+  margin-top: -10%;
+  margin-bottom: 150px;
+}
 
 h1 {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 
 .heading{
-  position: absolute;
-  text-align: center;
-  top: 300px;
-  left: 40%;
-  z-index: 10; 
+position: absolute;
+text-align: center;
+top: 300px;
+left: 40%;
+z-index: 10; 
 }
 
 .profile-section{
-  padding: 200px;
-  background-image: url(../bg-images/bg1.jpg);
-  border: none;
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 200px;
-  margin-bottom: 400px;
+padding: 200px;
+background-image: url(../bg-images/bg1.jpg);
+border: none;
+background-size: 75%;
+background-repeat: no-repeat;
+background-position: center;
+margin-top: 200px;
+margin-bottom: 400px;
 }
 
 h2, h3, a, p{
@@ -47,19 +47,19 @@ display: none;
 }
 
 input{
-  border-top:none;
-  border-left:none;
-  border-right:none;
-  background-color: transparent;
-  font-size: 25px;
+border-top:none;
+border-left:none;
+border-right:none;
+background-color: transparent;
+font-size: 25px;
 }
 
 form, .myKittenData{
-  font-size: 25px;
+font-size: 25px;
 }
 
 .myKittenData{
-  font-size: 25px;
+font-size: 25px;
 
 }
 
@@ -68,84 +68,84 @@ margin-bottom: 30px;
 }
 
 #scroll-text{
-  font-size: 30px;
+font-size: 30px;
 }
 
 .card{
-  background: transparent !important;
+background: transparent !important;
 }
 
 a {
-  color: black !important;
+color: black !important;
 }
 
 a:link { text-decoration: none !important; }
 a:visited { text-decoration: none; }
 a:hover { 
-  text-decoration: none;
-  border: dotted 1px !important; }
+text-decoration: none;
+border: dotted 1px !important; }
 a:active { text-decoration: none; }
 
 
 .myDiary{
-  background-image: url(../bg-images/bg3.jpg);
-  background-size: 150%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 10%;
-  margin-bottom: -10%;
+background-image: url(../bg-images/bg3.jpg);
+background-size: 150%;
+background-repeat: no-repeat;
+background-position: center;
+margin-top: 10%;
+margin-bottom: -10%;
 }
 
 #diary{
-  margin-top:8%;
+margin-top:8%;
 }
 
 #scroll-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-top: dotted 5px grey;
-  border-bottom: dotted 5px grey ;
-  overflow: hidden;
-  font-weight: 500;
+margin-top: 50px;
+margin-bottom: 50px;
+border-top: dotted 5px grey;
+border-bottom: dotted 5px grey ;
+overflow: hidden;
+font-weight: 500;
 }
 
 #scroll-text {
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  
-  -moz-animation: my-animation 50s linear infinite;
-  -webkit-animation: my-animation 50s linear infinite;
-  animation: my-animation 50s linear infinite;
+/* animation properties */
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+
+-moz-animation: my-animation 50s linear infinite;
+-webkit-animation: my-animation 50s linear infinite;
+animation: my-animation 50s linear infinite;
 }
 
 #diaryGrid{
-  margin-left: 10%;
-  margin-right: 10%;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
+from { -moz-transform: translateX(100%); }
+to { -moz-transform: translateX(-100%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
 }
 
 @keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
+from {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+to {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
 }
