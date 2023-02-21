@@ -2,6 +2,18 @@ body {
   font-family:'Bradley Hand ITC' !important;
 }
 
+h2, h3, a, p{
+  font-weight: 600 !important;
+  }
+
+h3{
+  font-size: 1rem;
+}
+
+.card-text{
+  display: none;
+}
+
 .hero-img{
   width: 100%;
   padding: 0 ! important;
@@ -9,40 +21,37 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  z-index: -10;
-  position: relative;
+  display: block;
   margin-top: 0.5em;
-  margin-bottom: 3em;
-}
-
-heading>h1 {
-  font-weight: 600 !important;
-  color:white;
+  margin-bottom: 5em;
 }
 
 .heading{
-position: absolute;
-text-align: center;
-top: 8em;
-left: 2em;
-z-index: 10; 
-color:white;
+  font-weight: 600 !important;
+  text-align: center;
+  color:black;
+  display: block;
 }
+
 
 .profile-section{
-padding: 10em;
 background-image: url(../bg-images/bg1.jpg);
 border: none;
-background-size: 75%;
+background-size: 100%;
 background-repeat: no-repeat;
 background-position: center;
-margin-top: 10em;
-margin-bottom: 20em;
+padding: 2em;
 }
 
-h2, h3, a, p{
-font-weight: 600 !important;
+.row>h1{
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
 }
+
+.row{
+  margin-bottom: 1.75em;
+  }
 
 .hide{
 display: none;
@@ -53,20 +62,12 @@ border-top:none;
 border-left:none;
 border-right:none;
 background-color: transparent;
-font-size: 1.25em;
+font-size: 1rem;
 }
 
 form, .myKittenData{
-font-size: 1.25rem;
-}
-
-
-.row{
-margin-bottom: 1.75em;
-}
-
-#scroll-text{
-font-size: 1.5rem;
+font-size: 1rem;
+margin-top: -1.5em;
 }
 
 .card{
@@ -86,21 +87,26 @@ a:active { text-decoration: none; }
 
 
 .myDiary{
-background-image: url(../bg-images/bg3.jpg);
-background-size: 150%;
-background-repeat: no-repeat;
-background-position: center;
-margin: 2em;
-padding: 4em;
-}
-
-#diaryGrid{
-  margin: 2em;
+  background-image: url(../bg-images/bg3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding:0;
   }
 
+.container-fluid{
+  margin:0;
+  padding:0;
+}
+ 
+#diaryGrid{
+  margin:0;
+  padding: 0;
+}
+
 #scroll-container {
-margin-top: 3em;
-margin-bottom: 3em;
+margin-top: 7em;
 border-top: dotted 5px grey;
 border-bottom: dotted 5px grey ;
 overflow: hidden;
@@ -115,8 +121,8 @@ transform: translateX(100%);
 -moz-animation: my-animation 50s linear infinite;
 -webkit-animation: my-animation 50s linear infinite;
 animation: my-animation 50s linear infinite;
+font-size: 1.5rem;
 }
-
 
 
 /* for Firefox */
