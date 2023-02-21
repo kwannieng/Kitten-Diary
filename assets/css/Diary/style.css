@@ -4,6 +4,11 @@ body {
   line-height: 1.5;
   }
 
+.navbar {
+min-height: 2rem;
+font-size: 2rem;
+font-weight: 700;
+}
 
 h1, h2, h3 {
   font-family: 'Bradley Hand ITC';
@@ -23,12 +28,11 @@ h1, h2, h3 {
   }
 
   
-  
 .heading{
   position: absolute;
   text-align: center;
   top: 5em;
-  font-size: 3rem;
+  font-size: 5rem;
   padding-left: 2em;
   padding-right: 2em;
   }
@@ -36,7 +40,7 @@ h1, h2, h3 {
 
 .lead-in {
   font-family: 'Bradley Hand ITC';
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.5;
   }
@@ -83,13 +87,14 @@ a:active { text-decoration: none; }
 }
 
 .modal-content {
-  font-size: 1.2rem;
+  position: center;
+  font-size: 2rem;
   font-weight: bolder !important;
   border: none;
   background: transparent;
   height: 100%;
   width: 65%;
-  margin: 6em 8em;
+  margin: 7em 4em;
 }
 
 .modal-heading{

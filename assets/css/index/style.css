@@ -87,15 +87,15 @@ a:active { text-decoration: none; }
 
 .myDiary{
 background-image: url(../bg-images/bg3.jpg);
-background-size: 150%;
+background-size: 100%;
 background-repeat: no-repeat;
 background-position: center;
-margin: 2em;
-padding: 4em;
+margin: 2em 9em 2em 9em;
+padding: 5em 7em 5em 7em;;
 }
 
 #diaryGrid{
-  margin: 2em;
+  margin: 5em 7em 5em 7em;
   }
 
 #scroll-container {
