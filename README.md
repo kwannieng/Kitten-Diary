@@ -23,9 +23,6 @@ Data entry page:
 ## Deployed Link
 https://kwannieng.github.io/Kitten-Diary/
 
-## Presentation Link
-
-https://drive.google.com/file/d/1e03zorGLP6tHiEFNWTYk0daY8icP3BcO/view?usp=share_link
 
 ## Presentation slide
 
